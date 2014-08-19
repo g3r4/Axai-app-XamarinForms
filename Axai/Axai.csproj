@@ -35,9 +35,6 @@
     <Compile Include="CarouselPage.xaml.cs">
       <DependentUpon>CarouselPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContentPageContainingCarouselPage.xaml.cs">
-      <DependentUpon>ContentPageContainingCarouselPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MemberRecordManager.cs" />
     <Compile Include="PortfolioRecordManager.cs" />
     <Compile Include="AbstractRecordManager.cs" />
@@ -73,9 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CarouselPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ContentPageContainingCarouselPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="TabbedPage.xaml">
