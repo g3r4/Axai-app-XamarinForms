@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Axai.TabbedAxai;assembly=Axai.TabbedAxai"
+            x:Class="Axai.TabbedAxai">
+
+  <TabbedPage.Children>
+      <ContentPage Title="Who we are" Icon="xaml.png">
+        <StackLayout>
+          <StackLayout.Padding>
+			<OnPlatform x:TypeArguments="Thickness"
+			iOS="0, 20, 0, 0" />
+		  </StackLayout.Padding>
+        	<WebView Source="http://xamarin.com" 
+        			 VerticalOptions = "FillAndExpand"
+        			 HorizontalOptions = "FillAndExpand"/>
+        </StackLayout>
+      </ContentPage>
+
+      <ContentPage Title="Axai" Icon="xaml.png">
+	      <StackLayout>
+	      <StackLayout.Padding>
+			<OnPlatform x:TypeArguments="Thickness"
+			iOS="0, 20, 0, 0" />
+		  </StackLayout.Padding>
+    	    <WebView Source="http://axai.com.mx" 
+    	    		 VerticalOptions = "FillAndExpand"
+    	    		 HorizontalOptions = "FillAndExpand"/>
+          </StackLayout>
+      </ContentPage>
+
+
+        <ContentPage Title="Mozilla" Icon="xaml.png">
+	      <StackLayout>
+    	    <WebView Source="http://mozilla.com" 
+    	    		 VerticalOptions = "FillAndExpand"
+    	    		 HorizontalOptions = "FillAndExpand"/>
+          </StackLayout>
+    	    		 
+      </ContentPage>
+
+       <ContentPage Title="Drupal" Icon="xaml.png">
+	      <StackLayout>
+    	    <WebView Source="http://drupal.org" 
+    	    		 VerticalOptions = "FillAndExpand"
+    	    		 HorizontalOptions = "FillAndExpand"/>
+          </StackLayout>
+    	    		 
+      </ContentPage>
+
+  </TabbedPage.Children>
+</TabbedPage>

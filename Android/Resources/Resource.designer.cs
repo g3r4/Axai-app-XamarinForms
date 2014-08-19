@@ -24,6 +24,10 @@ namespace Axai.Android
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public static void UpdateIdValues()
+		{
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -42,6 +46,9 @@ namespace Axai.Android
 			
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int scroller1 = 2130837505;
 			
 			static Drawable()
 			{
