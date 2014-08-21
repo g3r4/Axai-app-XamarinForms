@@ -21,6 +21,17 @@ namespace Axai
 		public string Timestamp { get ; set; }
 		public string SsFieldFace { get ; set ; }
 		public string SsFieldFlickrUrl { get ; set ; }
+		public string SsFieldFullName { get ; set ; }
+
+		public string NameSort
+		{
+			get
+			{
+				if (string.IsNullOrWhiteSpace(SsName) || SsName.Length == 0)
+					return "?";
+				return SsName[0].ToString().ToUpper();
+			}
+		}
 	}
 }
 

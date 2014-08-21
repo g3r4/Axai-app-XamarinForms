@@ -55,6 +55,7 @@ namespace Axai
 				MemberHolder.Timestamp = IndexKeyValue(jObj, "timestamp", i);
 				MemberHolder.SsFieldFace = IndexKeyValue(jObj, "ss_field_face", i); 
 				MemberHolder.SsFieldFlickrUrl = IndexKeyValue(jObj, "ss_field_flickr_:url", i);  
+				MemberHolder.SsFieldFullName = IndexKeyValue(jObj, "ss_field_full_name", i); 
 
 				this.MembersList.Add (MemberHolder);
 
