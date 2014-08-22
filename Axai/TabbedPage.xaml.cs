@@ -14,32 +14,8 @@ namespace Axai
 			//this.IsBusy=true;
 
 			InitializeComponent ();
-		}
-		protected override async void OnAppearing(){
 
-			this.IsBusy=true;
-
-			MembersViewModel mbmbersViewModelObject = await new MembersViewModel().StartAsync(); 
-
-			this.BindingContext = mbmbersViewModelObject; 
-
-			this.IsBusy = false;
-
-
-			//await this.DisplayAlert ("JSON", MembersList[0].SsName, "OK", null);
-		}
-
-		public void OnItemSelected(object sender, ItemTappedEventArgs args)
-		{
-			var member = args.Item as Member;
-			if (member == null)
-				return;
-
-			this.DisplayAlert ("Item selected", list.SelectedItem.ToString(), "OK", null);
-
-			Navigation.PushAsync(new Page());
-			// Reset the selected item
-			list.SelectedItem = null;
+			this.Children.Add(new MembersPage ());
 		}
 	}
 }

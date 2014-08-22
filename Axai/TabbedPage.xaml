@@ -2,40 +2,12 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:Axai.TabbedAxai;assembly=Axai.TabbedAxai"
-            x:Class="Axai.TabbedAxai">
+            x:Class="Axai.TabbedAxai" Title="Axai" >
 
   <TabbedPage.Children>
-      <ContentPage Title="Who we are" Icon="xaml.png" BackgroundColor="#FFFFFF">
-       <ListView x:Name="list" ItemsSource="{Binding Members}" 
-            HasUnevenRows="True">
-		    
-		    <ListView.ItemTemplate>
-		      <DataTemplate>
-			      <ViewCell>
-					<ViewCell.View>
-						<StackLayout Padding="5, 5, 0, 5"
-						Orientation="Horizontal"
-						Spacing="15">
-							<Image x:Name="image" Source="{Binding SsFieldUserPictureFileUrl}"/>
-							 <StackLayout Padding="5, 0, 0, 0"
-							 VerticalOptions="Center">
-								<Label Text="{Binding SsFieldFullName}" Font="Bold, Medium" />
-		        			</StackLayout>
-		        		</StackLayout>
-					</ViewCell.View>
-				</ViewCell>
-		      </DataTemplate>
-		    </ListView.ItemTemplate>
-		  </ListView>
-         
-      </ContentPage>
-
+      
       <ContentPage Title="Axai" Icon="xaml.png">
 	      <StackLayout>
-	      <StackLayout.Padding>
-			<OnPlatform x:TypeArguments="Thickness"
-			iOS="0, 20, 0, 0" />
-		  </StackLayout.Padding>
     	    <WebView Source="http://axai.com.mx" 
     	    		 VerticalOptions = "FillAndExpand"
     	    		 HorizontalOptions = "FillAndExpand"/>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.MemberDetails" Title="{Binding SsFieldFullName}">
+	<ScrollView Padding="20">
+		<StackLayout VerticalOptions="FillAndExpand" Spacing="10">
+			<Image Source="{Binding SsFieldUserPictureFileUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
+			<Label Text="{Binding SsFieldBioValue}" XAlign="Start" HorizontalOptions="Start"/>
+			<Button x:Name="twitterButton" Text="http://www.twitter.com/_g3r4" Clicked="OnTwitterButtonClicked" />
+		</StackLayout>
+	</ScrollView>
+</ContentPage>
