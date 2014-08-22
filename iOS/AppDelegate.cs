@@ -16,10 +16,21 @@ namespace Axai.iOS
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
+
+			UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes()
+				{
+					TextColor = UIColor.White
+				});
+						
+			UIBarButtonItem.Appearance.SetTitleTextAttributes(new UITextAttributes()
+				{
+
+					TextColor = UIColor.White
+				}, UIControlState.Normal);
+						
 			Forms.Init ();
 
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
-			
+			window = new UIWindow (UIScreen.MainScreen.Bounds);		
 			window.RootViewController = App.GetMainPage ().CreateViewController ();
 			window.MakeKeyAndVisible ();
 			
