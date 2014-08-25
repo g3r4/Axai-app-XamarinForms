@@ -24,7 +24,14 @@ namespace Axai
 			string valueString;
 
 			try{
-				valueString = jObj["response"] ["docs"] [i] [indexKey].ToString() ;
+				if (indexKey == "tm_field_bio:value")
+				{
+					valueString = jObj["response"] ["docs"] [i] [indexKey][0].ToString() ;
+				}
+				else
+				{
+					valueString = jObj["response"] ["docs"] [i] [indexKey].ToString() ;
+				}
 			} catch (System.NullReferenceException){
 				valueString = null;
 			} 

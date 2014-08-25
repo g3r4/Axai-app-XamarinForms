@@ -4,7 +4,19 @@
 		<StackLayout VerticalOptions="FillAndExpand" Spacing="10">
 			<Image Source="{Binding SsFieldUserPictureFileUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
 			<Label Text="{Binding SsFieldBioValue}" XAlign="Start" HorizontalOptions="Start"/>
-			<Button x:Name="twitterButton" Text="http://www.twitter.com/_g3r4" Clicked="OnTwitterButtonClicked" />
+
+			<Button x:Name="twitterButton" Text="Twitter" Clicked="OnButtonClicked" />
+
+			<Button x:Name="drupalButton" Text="Drupal.org" Clicked="OnButtonClicked" />
+
+			<Button x:Name="githubButton" Text="Github" Clicked="OnButtonClicked" />
+
+			<Button x:Name="facebookButton" Text="Facebook" Clicked="OnButtonClicked" />
+
+			<Button x:Name="flickrButton" Text="Flickr" Clicked="OnButtonClicked" />
+
+			<Button x:Name="mailButton" Text="e-Mail" Clicked="OnButtonClicked" />
+
 		</StackLayout>
 	</ScrollView>
 </ContentPage>

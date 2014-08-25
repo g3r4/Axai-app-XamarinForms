@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.MembersPage" 
 			 Title="Who we are" Icon="xaml.png" BackgroundColor="#FFFFFF">
+   <StackLayout>
+   <Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" />
    <ListView x:Name="list" ItemsSource="{Binding Members}" ItemTapped="OnItemSelected" 
         HasUnevenRows="True">	    
 	    <ListView.ItemTemplate>
@@ -21,4 +23,5 @@
 	      </DataTemplate>
 	    </ListView.ItemTemplate>
     </ListView>
+    </StackLayout>
 </ContentPage>

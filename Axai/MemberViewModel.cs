@@ -39,7 +39,7 @@ namespace Axai
 				MemberHolder.Id = IndexKeyValue (jObj, "id", i);
 				MemberHolder.IndexId = IndexKeyValue (jObj, "index_id", i);
 				MemberHolder.ItemId = IndexKeyValue (jObj, "item_id", i);
-				MemberHolder.SsFieldBioValue = IndexKeyValue (jObj, "ss_field_bio:value", i);
+				MemberHolder.SsFieldBioValue = IndexKeyValue (jObj, "tm_field_bio:value", i);
 				MemberHolder.SsFieldDrupalUrl = IndexKeyValue (jObj, "ss_field_drupal_:url", i);
 				MemberHolder.SsFieldGitUrl = IndexKeyValue (jObj, "ss_field_git:url", i);
 				MemberHolder.SsFieldInterestingValue = IndexKeyValue (jObj, "ss_field_interesting:value", i);
@@ -53,10 +53,6 @@ namespace Axai
 					MemberHolder.SsFieldUserPictureFileUrl = null;
 				}
 					
-				//"http://www.axai.com.mx/sites/default/files/pictures/jugo.png"
-				//"http://www.axai.com.mx/sites/default/files/styles/img_180x180/public/pictures/jugo.png"
-
-
 				MemberHolder.SsMail = IndexKeyValue (jObj, "ss_mail", i);
 				MemberHolder.SsName = IndexKeyValue (jObj, "ss_name", i);
 				MemberHolder.SsSearchApiLanguage = IndexKeyValue (jObj, "ss_search_api_language", i);

@@ -36,7 +36,6 @@
       <DependentUpon>CarouselPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MemberRecordManager.cs" />
-    <Compile Include="PortfolioRecordManager.cs" />
     <Compile Include="AbstractRecordManager.cs" />
     <Compile Include="Member.cs" />
     <Compile Include="TabbedPage.xaml.cs">
@@ -51,6 +50,7 @@
     <Compile Include="MemberDetails.xaml.cs">
       <DependentUpon>MemberDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExtendedTabbedPage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.0.6186\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.0.6186\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
