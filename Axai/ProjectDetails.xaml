@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.ProjectDetails" Title="{Binding SsTitle}"
+			  BackgroundColor="#FFFFFF">
+	<ScrollView Padding="20">
+		<StackLayout VerticalOptions="FillAndExpand" Spacing="10">
+			<Image Source="{Binding SsFieldFeaturedImageUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
+			<Label Text="{Binding SsBodyValue}" XAlign="Start" HorizontalOptions="Start"/>
+
+			<Button x:Name="twitterButton" Text="Visit this site !" Clicked="OnButtonClicked" />
+
+		</StackLayout>
+	</ScrollView>
+</ContentPage>	

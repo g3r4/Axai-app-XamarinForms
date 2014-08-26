@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Axai
 {
-	public abstract class AbstractRecordManager
+	public abstract class AbstractViewModel
 	{
 		public async Task<string> GetJsonFromDrupalAsync (string uri) {
 			var client = new System.Net.Http.HttpClient ();

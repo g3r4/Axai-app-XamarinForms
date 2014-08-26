@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.MembersPage" 
-			 Title="Who we are" Icon="xaml.png" BackgroundColor="#FFFFFF">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.PortfolioPage" 
+			 Title="Portfolio" Icon="xaml.png" BackgroundColor="#FFFFFF">
    <StackLayout>
    <Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" />
-   <ListView x:Name="list" ItemsSource="{Binding Members}" ItemTapped="OnItemSelected" 
+   <ListView x:Name="projectslist" ItemsSource="{Binding PortfolioProjects}" ItemTapped="OnItemSelected" 
         HasUnevenRows="True">	    
 	    <ListView.ItemTemplate>
 	      <DataTemplate>
@@ -12,10 +12,10 @@
 					<StackLayout Padding="5, 5, 0, 5"
 					Orientation="Horizontal"
 					Spacing="15">
-						<Image Source="{Binding SsFieldUserPictureFileUrl}"/>
+						<Image Source="{Binding SsFieldFeaturedImageUrl}"/>
 						 <StackLayout Padding="5, 0, 0, 0"
 						 VerticalOptions="Center">
-							<Label Text="{Binding SsFieldFullName}" Font="Bold, Medium" />
+							<Label Text="{Binding SsTitle}" Font="Bold, Medium" />
 	        			</StackLayout>
 	        		</StackLayout>
 				</ViewCell.View>
@@ -25,3 +25,4 @@
     </ListView>
     </StackLayout>
 </ContentPage>
+	

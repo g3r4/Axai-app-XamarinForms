@@ -9,11 +9,11 @@ using Axai.Helpers;
 
 namespace Axai
 {
-	public class MembersViewModel : AbstractRecordManager
+	public class MembersViewModel : AbstractViewModel
 	{
 		public ObservableCollection<Member> Members { get; set; }
 		public ObservableCollection<Grouping<string, Member>> MembersGrouped { get; set; }
-		private const string membersIndexJsonURI = "http://canek.axai.mx:8983/solr/collection1/select?q=*%3A*&fq=ss_search_api_language%3A\"en\"&wt=json";
+		private const string membersIndexJsonURI = "http://canek.axai.mx:8983/solr/collection1/select?q=*%3A*&fq=ss_search_api_language%3A\"en\"&fq=index_id%3A+\"multilingual_user_index\"&wt=json";
 		private string json;
 
 		async public Task<MembersViewModel> StartAsync()

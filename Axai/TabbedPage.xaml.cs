@@ -15,11 +15,19 @@ namespace Axai
 
 			InitializeComponent ();
 
+			// Add Children 1 of 4: Members Page
 			this.Children.Add(new MembersPage ());
+
+			// Add Children 2 of 4: Blog Page
 			this.Children.Add(new ContentPage () {
 				Content = new WebView (){ Source = "http://www.axai.com.mx/blog-all" },
 				Title = "Blog", Icon="xaml.png"
 			});
+
+			// Add Children 3 of 4: Portfolio Page
+			this.Children.Add(new PortfolioPage ());
+
+
 			currentPage = this.CurrentPage;
 			this.BindingContext = currentPage; 
 
@@ -27,7 +35,6 @@ namespace Axai
 		}
 		private void OnCurrentPageChanged()
 		{
-			//this.DisplayAlert("hola",this.CurrentPage.Title,"OK",null);
 			this.Title = this.CurrentPage.Title;
 		}
 	}

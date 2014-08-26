@@ -4,24 +4,24 @@ using Xamarin.Forms;
 
 namespace Axai
 {	
-	public partial class MembersPage
+	public partial class PortfolioPage
 	{	
-		private MembersViewModel mbmbersViewModelObject = null;
+		private PortfolioProjectViewModel projectsViewModelObject = null;
 
-		public MembersPage ()
+		public PortfolioPage ()
 		{
 			InitializeComponent ();
 		}
 		protected override async void OnAppearing(){
 
 			// Just load the json one time, once it is populated, the object can be used across the application, no need to re-request it everytime OnAppearing gets called
-			if (mbmbersViewModelObject == null){
+			if (projectsViewModelObject == null){
 
 				this.IsBusy=true;
 
-				mbmbersViewModelObject = await new MembersViewModel().StartAsync(); 
+				projectsViewModelObject = await new PortfolioProjectViewModel().StartAsync(); 
 
-				this.BindingContext = mbmbersViewModelObject; 
+				this.BindingContext = projectsViewModelObject; 
 
 				this.IsBusy = false;
 
@@ -32,18 +32,18 @@ namespace Axai
 		public void OnItemSelected(object sender, ItemTappedEventArgs args)
 		{
 
-			var member = args.Item as Member;
-			if (member == null)
+			var project = args.Item as PortfolioProject;
+			if (project == null)
 				return;
 
 
-			//this.DisplayAlert ("Item selected", member.SsFieldUserPictureFileUrl.ToString(), "OK", null);
+			//this.DisplayAlert ("Item selected", project.SsFieldFeaturedImageUrl.ToString() , "OK", null);
 
-			var memberDetails = new MemberDetails (member);
+			var projectDetails = new ProjectDetails (project);
 
-			Navigation.PushAsync( memberDetails);
+			Navigation.PushAsync( projectDetails);
 			//Reset the selected item
-			list.SelectedItem = null;
+			projectslist.SelectedItem = null;
 		}
 	}
 }

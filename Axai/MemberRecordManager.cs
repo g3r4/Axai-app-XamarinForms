@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Axai
 {
-	public class MemberRecordManager : AbstractRecordManager
+	public class MemberRecordManager : AbstractViewModel
 	{
 		// URI to get json from the Solr server containing all teammembers in English
 		private const string membersIndexJsonURI = "http://canek.axai.mx:8983/solr/collection1/select?q=*%3A*&fq=ss_search_api_language%3A\"en\"&wt=json";
