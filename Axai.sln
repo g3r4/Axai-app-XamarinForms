@@ -69,6 +69,6 @@ Global
 		{C313E351-8360-4C87-92BD-CA7C4FAB8405}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = iOS\Axai.iOS.csproj
+		StartupItem = Android\Axai.Android.csproj
 	EndGlobalSection
 EndGlobal

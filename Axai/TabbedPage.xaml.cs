@@ -21,11 +21,14 @@ namespace Axai
 			// Add Children 2 of 4: Blog Page
 			this.Children.Add(new ContentPage () {
 				Content = new WebView (){ Source = "http://www.axai.com.mx/blog-all" },
-				Title = "Blog", Icon="xaml.png"
+				Title = "Blog", Icon="IconBlog.png"
 			});
 
 			// Add Children 3 of 4: Portfolio Page
 			this.Children.Add(new PortfolioPage ());
+
+			// Add Childern 4 of 4: Contact Form
+			this.Children.Add (new ContactForm ());
 
 
 			currentPage = this.CurrentPage;

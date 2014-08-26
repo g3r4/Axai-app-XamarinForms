@@ -33,6 +33,8 @@ namespace Axai.iOS
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 
 			window.RootViewController = App.GetMainPage ().CreateViewController ();
+			// Change the tabs colors from blue(default) to orange
+			window.RootViewController.View.TintColor = UIColor.Orange;
 			window.MakeKeyAndVisible ();
 			
 			return true;
