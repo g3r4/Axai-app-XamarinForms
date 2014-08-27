@@ -18,7 +18,7 @@ namespace Axai
 
 		protected override void OnAppearing(){
 
-			//Since we can have members without all social networks, we have to hide the respective buttons for them
+			//Since we can have members without some social networks, we have to hide the respective buttons for them
 
 			if (currentMember.SsFieldTwitUrl == null) {
 				twitterButton.IsVisible = false;
