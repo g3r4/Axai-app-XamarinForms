@@ -3,8 +3,13 @@
 			  BackgroundColor="#FFFFFF">
 	<ScrollView Padding="20">
 		<StackLayout VerticalOptions="FillAndExpand" Spacing="10">
+
+			<StackLayout Padding="0,10,0,10">
+				<Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" HorizontalOptions="Center"/>
+			</StackLayout>
+
 			<Image Source="{Binding SsFieldUserPictureFileUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
-			<Label Text="{Binding SsFieldBioValue}" XAlign="Start" HorizontalOptions="Start"/>
+			<Label Text="{Binding SsFieldBioValue}" XAlign="Start" HorizontalOptions="Center" TextColor="Black"/>
 
 			<Button x:Name="twitterButton" Text="Twitter" Clicked="OnButtonClicked" />
 

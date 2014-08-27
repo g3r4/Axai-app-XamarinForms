@@ -108,6 +108,10 @@
     <BundleResource Include="Resources\IconContact.png" />
     <BundleResource Include="Resources\IconPortfolio.png" />
     <BundleResource Include="Resources\IconWhoweare.png" />
+    <BundleResource Include="Resources\IconBlog%402x.png" />
+    <BundleResource Include="Resources\IconContact%402x.png" />
+    <BundleResource Include="Resources\IconPortfolio%402x.png" />
+    <BundleResource Include="Resources\IconWhoweare%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

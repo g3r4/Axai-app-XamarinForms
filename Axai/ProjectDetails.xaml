@@ -4,9 +4,9 @@
 	<ScrollView Padding="20">
 		<StackLayout VerticalOptions="FillAndExpand" Spacing="10">
 			<Image Source="{Binding SsFieldFeaturedImageUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
-			<Label Text="{Binding SsBodyValue}" XAlign="Start" HorizontalOptions="Start"/>
+			<Label Text="{Binding SsBodyValue}" XAlign="Start" HorizontalOptions="Start" TextColor="Black"/>
 
-			<Button x:Name="twitterButton" Text="Visit this site !" Clicked="OnButtonClicked" />
+			<Button Text="Visit this site" Clicked="OnButtonClicked" />
 
 		</StackLayout>
 	</ScrollView>

@@ -2,26 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.MembersPage" 
 			 Title="Who we are" Icon="IconWhoweare.png" BackgroundColor="#FFFFFF">
    <StackLayout>
-   <Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" />
-   <ListView x:Name="list" ItemsSource="{Binding Members}" ItemTapped="OnItemSelected" 
-        HasUnevenRows="True">	    
-	    <ListView.ItemTemplate>
-	      <DataTemplate>
-		      <ViewCell>
-				<ViewCell.View>
-					<StackLayout Padding="5, 5, 0, 5"
-					Orientation="Horizontal"
-					Spacing="15">
-						<Image Source="{Binding SsFieldUserPictureFileUrl}"/>
-						 <StackLayout Padding="5, 0, 0, 0"
-						 VerticalOptions="Center">
-							<Label Text="{Binding SsFieldFullName}" Font="Bold, Medium" />
-	        			</StackLayout>
-	        		</StackLayout>
-				</ViewCell.View>
-			</ViewCell>
-	      </DataTemplate>
-	    </ListView.ItemTemplate>
-    </ListView>
+   		<StackLayout Padding="0,10,0,10">
+   			<Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" HorizontalOptions="Center"/>
+		</StackLayout>
+   		<StackLayout Padding="5,5,5,5">
+	   		<Label Text="In Axai we like to develop mobile and web applications based on the Drupal platform, We will make sure those applications integrate seamlessly with existing or new systems ." 
+	   		  		XAlign="Center" TextColor="Black"/>
+   		</StackLayout>
+	   <ListView x:Name="list" ItemsSource="{Binding Members}" ItemTapped="OnItemSelected" 
+	        HasUnevenRows="True">	    
+		    <ListView.ItemTemplate>
+		      <DataTemplate>
+			      <ViewCell>
+					<ViewCell.View>
+						<StackLayout Padding="5, 5, 0, 5"
+						Orientation="Horizontal"
+						Spacing="15">
+							<Image Source="{Binding SsFieldUserPictureFileUrl}"/>
+							 <StackLayout Padding="5, 0, 0, 0"
+							 VerticalOptions="Center">
+								<Label Text="{Binding SsFieldFullName}" Font="Bold, Medium" TextColor="Black"/>
+		        			</StackLayout>
+		        		</StackLayout>
+					</ViewCell.View>
+				</ViewCell>
+		      </DataTemplate>
+		    </ListView.ItemTemplate>
+	    </ListView>
     </StackLayout>
 </ContentPage>
