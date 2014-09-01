@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.ContactForm" Title="Contact" 
-			 Icon="IconContact.png">
+			 Icon="IconContact.png" BackgroundColor="White">
 	<ContentPage.Content>
 		<ScrollView>
 		<StackLayout>
@@ -8,42 +8,45 @@
    				<Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" HorizontalOptions="Center"/>
 			</StackLayout>
 
-			<Label Text="Are you ready to get started?" XAlign="Center" />
-			<Label Text="Tell us about your project." XAlign="Center" />
+			<Label Text="Are you ready to get started?" XAlign="Center" TextColor="Black"/>
+			<Label Text="Tell us about your project." XAlign="Center" TextColor="Black"/>
 
 			<StackLayout Padding="10,10,10,0">
-				<Label Text="Name *" XAlign="Start" />
+				<Label Text="Name *" XAlign="Start" TextColor="Black"/>
 			</StackLayout>
 			<StackLayout Padding="10,5,10,0">
-				<Entry Placeholder="Enter your name" />
-			</StackLayout>
-
-			<StackLayout Padding="10,10,10,0">
-				<Label Text="E-mail *" XAlign="Start" />
-			</StackLayout>
-			<StackLayout Padding="10,5,10,0">
-				<Entry Placeholder="Enter your e-mail" />
+				<Entry x:Name="entryName" Placeholder="Enter your name" TextColor="#F89B33"/>
 			</StackLayout>
 
 			<StackLayout Padding="10,10,10,0">
-				<Label Text="Phone" XAlign="Start" />
+				<Label x:Name="labelEmail" Text="E-mail *" XAlign="Start" TextColor="Black"/>
 			</StackLayout>
 			<StackLayout Padding="10,5,10,0">
-				<Entry Placeholder="Enter your phone" />
+				<Entry x:Name="entryEmail" Placeholder="Enter your e-mail" TextColor="#F89B33"/>
 			</StackLayout>
 
 			<StackLayout Padding="10,10,10,0">
-				<Label Text="Company" XAlign="Start" />
+				<Label Text="Phone" XAlign="Start" TextColor="Black"/>
 			</StackLayout>
 			<StackLayout Padding="10,5,10,0">
-				<Entry Placeholder="Enter your company" />
+				<Entry x:Name="entryPhone" Placeholder="Enter your phone" TextColor="#F89B33"/>
 			</StackLayout>
 
 			<StackLayout Padding="10,10,10,0">
-				<Label Text="Brief Project Description *" XAlign="Start" />
+				<Label Text="Company" XAlign="Start" TextColor="Black"/>
 			</StackLayout>
 			<StackLayout Padding="10,5,10,0">
-				<Editor HeightRequest="200"  />
+				<Entry x:Name="entryCompany" Placeholder="Enter your company" TextColor="#F89B33"/>
+			</StackLayout>
+
+			<StackLayout Padding="10,10,10,0">
+				<Label Text="Brief Project Description *" XAlign="Start" TextColor="Black"/>
+			</StackLayout>
+			<StackLayout Padding="10,5,10,0">
+				<Entry x:Name="entryProjectDescription" Placeholder="Enter your ideas" TextColor="#F89B33"/>
+			</StackLayout>
+			<StackLayout Padding="10,5,10,0">
+				<Button Text="Submit" Clicked="OnSubmit" />
 			</StackLayout>
 
 

@@ -13,7 +13,7 @@ namespace Axai
 	{
 		public ObservableCollection<PortfolioProject> PortfolioProjects { get; set; }
 
-		private const string projectsIndexJsonURI = "http://canek.axai.mx:8983/solr/collection1/select?q=*%3A*&fq=ss_type%3A+%22project%22&fq=ss_search_api_language%3A+%22en%22&rows=100&wt=json";
+		private const string projectsIndexJsonURI = "http://axai.com.mx:8983/solr/collection1/select?q=*%3A*&fq=ss_type%3A+%22project%22&fq=ss_search_api_language%3A+%22en%22&rows=100&wt=json";
 		private string json;
 
 		async public Task<PortfolioProjectViewModel> StartAsync()
