@@ -7,7 +7,7 @@ namespace Axai
 		public static Page GetMainPage ()
 		{	
 			var tabbedAxai = new TabbedAxai ();
-			NavigationPage nav = new NavigationPage (tabbedAxai) { Tint = Color.FromHex("#428BCA") };
+			NavigationPage nav = new NavigationPage (tabbedAxai) { BarBackgroundColor = Color.FromHex("#428BCA"), BarTextColor = Color.White };
 			return nav;
 		}
 	}

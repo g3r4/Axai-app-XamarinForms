@@ -19,10 +19,7 @@ namespace Axai
 			this.Children.Add(new MembersPage ());
 
 			// Add Children 2 of 4: Blog Page
-			this.Children.Add(new ContentPage () {
-				Content = new WebView (){ Source = "http://www.axai.com.mx/blog-all" },
-				Title = "Blog", Icon="IconBlog.png"
-			});
+			this.Children.Add(new BlogPage ()) ;
 
 			// Add Children 3 of 4: Portfolio Page
 			this.Children.Add(new PortfolioPage ());
@@ -36,10 +33,10 @@ namespace Axai
 
 			this.CurrentPageChanged += OnCurrentPageChanged;
 		}
-		private void OnCurrentPageChanged()
-		{
-			this.Title = this.CurrentPage.Title;
-		}
+//		protected override void OnCurrentPageChanged()
+//		{
+//			this.Title = this.CurrentPage.Title;
+//		}
 	}
 }
 

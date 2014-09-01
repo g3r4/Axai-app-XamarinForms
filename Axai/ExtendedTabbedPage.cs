@@ -11,7 +11,7 @@ namespace Axai
 	public class ExtendedTabbedPage : TabbedPage
 	{
 		public event CurrentPageChangingEventHandler CurrentPageChanging;
-		public event CurrentPageChangedEventHandler CurrentPageChanged;
+		public new event CurrentPageChangedEventHandler CurrentPageChanged;
 
 		public ExtendedTabbedPage()
 		{
@@ -51,6 +51,10 @@ namespace Axai
 			{
 				handler();
 			}
+		}
+		protected override void OnCurrentPageChanged()
+		{
+			this.Title = this.CurrentPage.Title;
 		}
 	}
 }
