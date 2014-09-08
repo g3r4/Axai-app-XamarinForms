@@ -99,6 +99,22 @@ namespace Axai
 				}
 			}
 		}
+		async void OnCall(object sender, System.EventArgs e)
+		{
+			if (await this.DisplayAlert(
+				"Dial a Number",
+				"Would you like to call " + ((Button) sender).Text + "?",
+				"Yes",
+				"No"))
+			{
+
+				var dialer = DependencyService.Get<IDialer>();
+				if (dialer != null)
+				{
+					dialer.Dial(((Button) sender).Text);
+				}
+			}
+		}
 	}
 }
 

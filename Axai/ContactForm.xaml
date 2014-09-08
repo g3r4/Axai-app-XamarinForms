@@ -9,6 +9,10 @@
 			</StackLayout>
 
 			<Label Text="Are you ready to get started?" XAlign="Center" TextColor="Black"/>
+			<Label Text="Give us a Call (International)" XAlign="Center" TextColor="Black"/>
+			<Button Text="+52-33-1812-8001" Clicked="OnCall"/>
+			<Label Text="México local number" XAlign="Center" TextColor="Black"/>
+			<Button Text="33-1812-8001" Clicked="OnCall"/>
 			<Label Text="Tell us about your project." XAlign="Center" TextColor="Black"/>
 
 			<StackLayout Padding="10,10,10,0">
