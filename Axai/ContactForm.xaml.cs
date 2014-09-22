@@ -46,7 +46,7 @@ namespace Axai
 					labelEmail.TextColor = Color.Black;
 					return true;
 				}else {
-					this.DisplayAlert ("Invalid E-mail Address", "Please, enter a valid e-mail address", "OK", null);
+					this.DisplayAlert ("Invalid E-mail Address", "Please, enter a valid e-mail address", "OK");
 					labelEmail.TextColor = Color.Red;
 					return false;
 				}

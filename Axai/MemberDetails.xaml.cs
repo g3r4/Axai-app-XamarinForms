@@ -74,7 +74,7 @@ namespace Axai
 				});
 				break;
 			case "e-Mail":
-				this.DisplayAlert (currentMember.SsFieldFullName + " e-Mail is:", currentMember.SsMail , "OK", null);
+				this.DisplayAlert (currentMember.SsFieldFullName + " e-Mail is:", currentMember.SsMail , "OK");
 				break;
 			}
 		
