@@ -82,6 +82,23 @@ namespace Axai
 
 			//Navigation.PushAsync(new ContentPage(){Content= new WebView(){Source= ((Button)sender).Text }, Title=currentMember.SsFieldFullName } );
 		}
+
+		async void OnMailButtonClicked(object sender, EventArgs e){
+			if (await this.DisplayAlert(
+				"Send e-mail",
+				"Would you like to send an email to " + currentMember.SsMail + "?",
+				"Yes",
+				"No"))
+			{
+				var _sender = sender;
+				var _event = e;
+				var mailer = DependencyService.Get<IeMailer>();
+				if (mailer != null)
+				{
+					mailer.composeEmail(currentMember.SsMail);
+				}
+			}
+		}
 	}
 }
 

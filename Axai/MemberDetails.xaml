@@ -21,7 +21,7 @@
 
 			<Button x:Name="flickrButton" Text="Flickr" Clicked="OnButtonClicked" />
 
-			<Button x:Name="mailButton" Text="e-Mail" Clicked="OnButtonClicked" />
+			<Button x:Name="mailButton" Text="e-Mail" Clicked="OnMailButtonClicked" />
 
 		</StackLayout>
 	</ScrollView>
