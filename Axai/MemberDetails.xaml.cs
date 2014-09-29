@@ -102,8 +102,6 @@ namespace Axai
 				"Yes",
 				"No"))
 			{
-				var _sender = sender;
-				var _event = e;
 				var mailer = DependencyService.Get<IeMailer>();
 				if (mailer != null)
 				{
