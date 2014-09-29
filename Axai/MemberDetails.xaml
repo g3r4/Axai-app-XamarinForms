@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.MemberDetails" Title="{Binding SsFieldFullName}"
 			  BackgroundColor="#FFFFFF">
-	<ScrollView Padding="20">
-		<StackLayout VerticalOptions="FillAndExpand" Spacing="10">
+	<ScrollView>
+		<StackLayout VerticalOptions="FillAndExpand"  Padding="10,0,10,0">
 
 			<StackLayout Padding="0,10,0,10">
 				<Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" HorizontalOptions="Center"/>
@@ -11,17 +11,35 @@
 			<Image Source="{Binding SsFieldUserPictureFileUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
 			<Label Text="{Binding SsFieldBioValue}" XAlign="Start" HorizontalOptions="Center" TextColor="Black"/>
 
-			<Button x:Name="twitterButton" Text="Twitter" Clicked="OnButtonClicked" />
+			<StackLayout x:Name="twitterStack" Orientation="Horizontal">
+				<Image x:Name="twitterIcon" Source="twitter_55acee.png"/>
+				<Button x:Name="twitterButton" Text="Twitter" Clicked="OnButtonClicked" />
+			</StackLayout>
 
-			<Button x:Name="drupalButton" Text="Drupal.org" Clicked="OnButtonClicked" />
+			<StackLayout x:Name="drupalStack" Orientation="Horizontal">
+				<Image x:Name="drupalIcon" Source="drupal_2ba9e0.png"/>
+				<Button x:Name="drupalButton" Text="Drupal.org" Clicked="OnButtonClicked" />
+			</StackLayout>
 
-			<Button x:Name="githubButton" Text="Github" Clicked="OnButtonClicked" />
+			<StackLayout x:Name="githubStack" Orientation="Horizontal">
+				<Image x:Name="githubIcon" Source="github_000000.png"/>
+				<Button x:Name="githubButton" Text="Github" Clicked="OnButtonClicked" />
+			</StackLayout>
 
-			<Button x:Name="facebookButton" Text="Facebook" Clicked="OnButtonClicked" />
+			<StackLayout x:Name="facebookStack" Orientation="Horizontal">
+				<Image x:Name="facebookIcon" Source="facebook_334f8c.png"/>
+				<Button x:Name="facebookButton" Text="Facebook" Clicked="OnButtonClicked" />
+			</StackLayout>
 
-			<Button x:Name="flickrButton" Text="Flickr" Clicked="OnButtonClicked" />
+			<StackLayout x:Name="flickrStack" Orientation="Horizontal">
+				<Image x:Name="flickrIcon" Source="flickr_ff0080.png"/>
+				<Button x:Name="flickrButton" Text="Flickr" Clicked="OnButtonClicked" />
+			</StackLayout>
 
-			<Button x:Name="mailButton" Text="e-Mail" Clicked="OnMailButtonClicked" />
+			<StackLayout x:Name="mailStack" Orientation="Horizontal">
+				<Image x:Name="mailIcon" Source="envelope_f89b33.png"/>
+				<Button x:Name="mailButton" Text="e-Mail" Clicked="OnMailButtonClicked" />
+			</StackLayout>
 
 		</StackLayout>
 	</ScrollView>

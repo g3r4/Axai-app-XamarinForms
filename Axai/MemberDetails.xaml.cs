@@ -22,21 +22,33 @@ namespace Axai
 
 			if (currentMember.SsFieldTwitUrl == null) {
 				twitterButton.IsVisible = false;
+				twitterIcon.IsVisible = false;
+				twitterStack.IsVisible = false;
 			}
 			if (currentMember.SsFieldDrupalUrl == null) {
 				drupalButton.IsVisible = false;
+				drupalIcon.IsVisible = false;
+				drupalStack.IsVisible = false;
 			}
 			if (currentMember.SsFieldGitUrl == null) {
 				githubButton.IsVisible = false;
+				githubIcon.IsVisible = false;
+				githubStack.IsVisible = false;
 			}
 			if (currentMember.SsMail == null) {
 				mailButton.IsVisible = false;
+				mailIcon.IsVisible = false;
+				mailStack.IsVisible = false;
 			}
 			if (currentMember.SsFieldFace == null) {
 				facebookButton.IsVisible = false;
+				facebookIcon.IsVisible = false;
+				facebookStack.IsVisible = false;
 			}
 			if (currentMember.SsFieldFlickrUrl == null) {
 				flickrButton.IsVisible = false;
+				flickrIcon.IsVisible = false;
+				flickrStack.IsVisible = false;
 			}
 		}
 	

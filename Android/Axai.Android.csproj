@@ -81,8 +81,48 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\drawable\Icon.png" />
-    <AndroidResource Include="Resources\drawable\scroller1.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\drupal_2ba9e0.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\drupal_2ba9e0.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\drupal_2ba9e0.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\drupal_2ba9e0.png" />
+    <AndroidResource Include="Resources\drawable\drupal_2ba9e0.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drupal_2ba9e0.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\twitter_55acee.png" />
+    <AndroidResource Include="Resources\drawable\twitter_55acee.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\twitter_55acee.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\twitter_55acee.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\twitter_55acee.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\twitter_55acee.png" />
+    <AndroidResource Include="Resources\drawable\github_000000.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\github_000000.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\github_000000.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\github_000000.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\github_000000.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\github_000000.png" />
+    <AndroidResource Include="Resources\drawable\facebook_334f8c.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\facebook_334f8c.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\facebook_334f8c.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\facebook_334f8c.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\facebook_334f8c.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\facebook_334f8c.png" />
+    <AndroidResource Include="Resources\drawable\flickr_ff0080.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\flickr_ff0080.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\flickr_ff0080.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\flickr_ff0080.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\flickr_ff0080.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\flickr_ff0080.png" />
+    <AndroidResource Include="Resources\drawable\envelope_f89b33.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\envelope_f89b33.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\envelope_f89b33.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\envelope_f89b33.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\envelope_f89b33.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\envelope_f89b33.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
@@ -91,5 +131,12 @@
       <Version>104.4.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
 </Project>

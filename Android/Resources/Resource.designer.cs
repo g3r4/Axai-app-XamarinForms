@@ -45,10 +45,25 @@ namespace Axai.Android
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int drupal_2ba9e0 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int scroller1 = 2130837505;
+			public const int envelope_f89b33 = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int facebook_334f8c = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int flickr_ff0080 = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int github_000000 = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int icon = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int twitter_55acee = 2130837510;
 			
 			static Drawable()
 			{
