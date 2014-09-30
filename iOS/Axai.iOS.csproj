@@ -137,6 +137,17 @@
     <BundleResource Include="Resources\Default-Landscape.png" />
     <BundleResource Include="Resources\Default-Portrait%402x.png" />
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
+    <BundleResource Include="Resources\drupal_2ba9e0.png" />
+    <BundleResource Include="Resources\drupal_2ba9e0%402x.png" />
+    <BundleResource Include="Resources\envelope_f89b33%402x.png" />
+    <BundleResource Include="Resources\facebook_334f8c.png" />
+    <BundleResource Include="Resources\facebook_334f8c%402x.png" />
+    <BundleResource Include="Resources\flickr_ff0080.png" />
+    <BundleResource Include="Resources\flickr_ff0080%402x.png" />
+    <BundleResource Include="Resources\github_000000.png" />
+    <BundleResource Include="Resources\github_000000%402x.png" />
+    <BundleResource Include="Resources\twitter_55acee.png" />
+    <BundleResource Include="Resources\twitter_55acee%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
