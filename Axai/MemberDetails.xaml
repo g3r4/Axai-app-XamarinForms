@@ -8,7 +8,7 @@
 				<Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" HorizontalOptions="Center"/>
 			</StackLayout>
 
-			<Image Source="{Binding SsFieldUserPictureFileUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
+			<Image Source="{Binding SsFieldUserPictureFileUrl}" WidthRequest="250" HeightRequest="250" Aspect="AspectFit"/>
 			<Label Text="{Binding SsFieldBioValue}" XAlign="Start" HorizontalOptions="Center" TextColor="Black"/>
 
 			<StackLayout x:Name="twitterStack" Orientation="Horizontal">
