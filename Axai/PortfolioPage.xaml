@@ -18,7 +18,7 @@
 					<StackLayout Padding="5, 5, 0, 5"
 					Orientation="Horizontal"
 					Spacing="15">
-						<Image Source="{Binding SsFieldFeaturedImageUrl}"/>
+						<Image Source="{Binding SsFieldFeaturedImageUrl}" HeightRequest="100" WidthRequest="100"/>
 						 <StackLayout Padding="5, 0, 0, 0"
 						 VerticalOptions="Center">
 							<Label Text="{Binding SsTitle}" Font="Bold, Medium" TextColor="Black"/>

@@ -33,10 +33,6 @@ namespace Axai
 
 			this.CurrentPageChanged += OnCurrentPageChanged;
 		}
-//		protected override void OnCurrentPageChanged()
-//		{
-//			this.Title = this.CurrentPage.Title;
-//		}
 	}
 }
 

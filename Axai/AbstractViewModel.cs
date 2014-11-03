@@ -12,8 +12,15 @@ namespace Axai
 		public async Task<string> GetJsonFromDrupalAsync (string uri) {
 			var client = new System.Net.Http.HttpClient ();
 			client.BaseAddress = new Uri(uri);
-			var response = await client.GetAsync("");
-			return response.Content.ReadAsStringAsync().Result;
+			try {
+				var response = await client.GetAsync("");
+				if (response.StatusCode == System.Net.HttpStatusCode.NotFound) {
+					return null;		
+					}
+				return response.Content.ReadAsStringAsync().Result;
+			} catch (WebException e){
+				return null;
+			}
 		}
 
 		// This method checks if an indexKey exists in a JObject, if it does, returns the value of the Index key, if it doesn't

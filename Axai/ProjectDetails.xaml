@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Axai.ProjectDetails" Title="{Binding SsTitle}"
 			  BackgroundColor="#FFFFFF">
-	<ScrollView Padding="20">
-		<StackLayout VerticalOptions="FillAndExpand" Spacing="10">
-			<Image Source="{Binding SsFieldFeaturedImageUrl}" VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
+	<ScrollView>
+		<StackLayout VerticalOptions="FillAndExpand"  Padding="10,10,10,0">
+
+			<StackLayout Padding="0,10,0,10">
+				<Image Source="http://www.axai.com.mx/sites/default/files/axai%20logo_1.png" HorizontalOptions="Center"/>
+			</StackLayout>
+				
+			<Image Source="{Binding SsFieldFeaturedImageUrl}"  HeightRequest="350" WidthRequest="350" />
 			<Label Text="{Binding SsBodyValue}" XAlign="Start" HorizontalOptions="Start" TextColor="Black"/>
 
-			<Button Text="Visit this site" Clicked="OnButtonClicked" />
+			<Button Text="Visit this site" Clicked="OnButtonClicked" BackgroundColor="White" TextColor="#08C"/>
 
 		</StackLayout>
 	</ScrollView>

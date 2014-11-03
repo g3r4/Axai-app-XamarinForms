@@ -32,9 +32,6 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CarouselPage.xaml.cs">
-      <DependentUpon>CarouselPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MemberRecordManager.cs" />
     <Compile Include="Member.cs" />
     <Compile Include="TabbedPage.xaml.cs">
@@ -42,7 +39,6 @@
     </Compile>
     <Compile Include="MemberViewModel.cs" />
     <Compile Include="Helpers\Grouping.cs" />
-    <Compile Include="AspectImageCell.cs" />
     <Compile Include="MembersPage.xaml.cs">
       <DependentUpon>MembersPage.xaml</DependentUpon>
     </Compile>
@@ -94,9 +90,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CarouselPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="TabbedPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
-using System.Threading.Tasks;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 
@@ -22,9 +21,9 @@ namespace Axai
 			if (ValidateForm ()) {
 				var result = this.POST ();
 				if (result.IsSuccessStatusCode) {
-					this.DisplayAlert ("Thank you", "We will get in touch with you very soon", "OK", null);	
+					this.DisplayAlert ("Thank you", "We will get in touch with you very soon", "OK");	
 				} else {
-					this.DisplayAlert ("Remote server error", "There was a problem with our server, please try again later", "OK", null);	
+					this.DisplayAlert ("Remote server error", "There was a problem with our server, please try again later", "OK");	
 				}
 			}
 
@@ -56,7 +55,7 @@ namespace Axai
 						EmptyFields+= "[" + formValue.Key + "] ";
 					}
 				}
-				this.DisplayAlert ("Required fields are emtpy", EmptyFields, "OK", null);
+				this.DisplayAlert ("Required fields are emtpy", EmptyFields, "OK");
 				return false;
 			}
 		}

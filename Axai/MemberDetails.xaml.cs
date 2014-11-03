@@ -18,7 +18,7 @@ namespace Axai
 
 		protected override void OnAppearing(){
 
-			//Since we can have members without some social networks, we have to hide the respective buttons for them
+			//Since we can have members without some social networks, we have to hide the respective buttons and icons for them
 
 			if (currentMember.SsFieldTwitUrl == null) {
 				twitterButton.IsVisible = false;
@@ -61,7 +61,7 @@ namespace Axai
 					Title = ((Button)sender).Text
 				});
 				break;
-			case "Drupal.org":
+			case "Drupal":
 				Navigation.PushAsync (new ContentPage () {
 					Content = new WebView (){ Source = currentMember.SsFieldDrupalUrl },
 					Title = ((Button)sender).Text
@@ -91,8 +91,6 @@ namespace Axai
 			}
 		
 			//this.DisplayAlert ("Item selected", list.SelectedItem.ToString(), "OK", null);
-
-			//Navigation.PushAsync(new ContentPage(){Content= new WebView(){Source= ((Button)sender).Text }, Title=currentMember.SsFieldFullName } );
 		}
 
 		async void OnMailButtonClicked(object sender, EventArgs e){

@@ -18,9 +18,13 @@ namespace Axai
 
 		async public Task<MembersViewModel> StartAsync()
 		{
-			Members = new ObservableCollection<Member>();
+			Members = new ObservableCollection<Member>(); 
 
-			this.json = await GetJsonFromDrupalAsync (membersIndexJsonURI);		
+			this.json = await GetJsonFromDrupalAsync (membersIndexJsonURI);
+
+			if (this.json == null) {
+				return null;
+			}
 
 			JObject jObj = JObject.Parse(json);
 

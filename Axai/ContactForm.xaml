@@ -9,11 +9,13 @@
 			</StackLayout>
 
 			<Label Text="Are you ready to get started?" XAlign="Center" TextColor="Black"/>
-			<Label Text="Give us a Call (International)" XAlign="Center" TextColor="Black"/>
-			<Button Text="+52-33-1812-8001" Clicked="OnCall"/>
-			<Label Text="México local number" XAlign="Center" TextColor="Black"/>
-			<Button Text="33-1812-8001" Clicked="OnCall"/>
-			<Label Text="Tell us about your project." XAlign="Center" TextColor="Black"/>
+			<Label Text="Give us a Call (International):" XAlign="Center" TextColor="Black"/>
+			<Button Text="+52-33-1812-8001" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
+			<Button Text="+52-33-3632-6361" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
+			<Label Text="México local numbers:" XAlign="Center" TextColor="Black"/>
+			<Button Text="33-1812-8001" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
+			<Button Text="33-3632-6361" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
+			<Label Text="Or tell us about your project:" XAlign="Center" TextColor="Black"/>
 
 			<StackLayout Padding="10,10,10,0">
 				<Label Text="Name *" XAlign="Start" TextColor="Black"/>
@@ -50,7 +52,7 @@
 				<Entry x:Name="entryProjectDescription" Placeholder="Enter your ideas" TextColor="#F89B33"/>
 			</StackLayout>
 			<StackLayout Padding="10,5,10,0">
-				<Button Text="Submit" Clicked="OnSubmit" />
+				<Button Text="Submit" Clicked="OnSubmit" BackgroundColor="White" TextColor="#08C"/>
 			</StackLayout>
 
 

@@ -19,7 +19,13 @@ namespace Axai
 
 				this.IsBusy=true;
 
-				mbmbersViewModelObject = await new MembersViewModel().StartAsync(); 
+				do{
+					mbmbersViewModelObject = await new MembersViewModel().StartAsync(); 
+					if (mbmbersViewModelObject ==null){
+						await this.DisplayAlert ("Connection Error", "The Server could not be reached. Please check that you have an active internet connection and try again.", "Try Again");
+					}
+				}while (mbmbersViewModelObject == null);
+
 
 				this.BindingContext = mbmbersViewModelObject; 
 

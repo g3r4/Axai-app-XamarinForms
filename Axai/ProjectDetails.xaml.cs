@@ -17,15 +17,10 @@ namespace Axai
 
 		public void OnButtonClicked(object sender, EventArgs e)
 		{
-
 			Navigation.PushAsync (new ContentPage () {
 				Content = new WebView (){ Source = currentProject.SsFieldSiteUrl },
 				Title = currentProject.SsTitle
 			});
-
-			//this.DisplayAlert ("Item selected", list.SelectedItem.ToString(), "OK", null);
-
-			//Navigation.PushAsync(new ContentPage(){Content= new WebView(){Source= ((Button)sender).Text }, Title=currentMember.SsFieldFullName } );
 		}
 	}
 }

@@ -47,12 +47,12 @@ namespace Axai
 				PortfolioProjectHolder.SsBodyValue = IndexKeyValue (jObj, "ss_body:value", i);
 				PortfolioProjectHolder.SsFieldSiteUrl = IndexKeyValue (jObj, "ss_field_site_s_url_:url", i);
 
-				// Request a smaller version of the picture since the original one is very large (panopoly provides a quarter sized image)
+				// Request a smaller version of the picture since the original one is very large (panopoly provides a half sized image)
 
 				stringHolder = IndexKeyValue (jObj, "ss_field_featured_image:file:url", i);
 				if (stringHolder != null) {
 					stringIndex = stringHolder.IndexOf ("files/");
-					PortfolioProjectHolder.SsFieldFeaturedImageUrl = stringHolder.Insert (stringIndex + "files/".Length, "styles/panopoly_image_quarter/public/");
+					PortfolioProjectHolder.SsFieldFeaturedImageUrl = stringHolder.Insert (stringIndex + "files/".Length, "styles/panopoly_image_half/public/");
 				} else {
 					PortfolioProjectHolder.SsFieldFeaturedImageUrl = null;
 				}
