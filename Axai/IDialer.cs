@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace Axai
 {
 	public interface IDialer

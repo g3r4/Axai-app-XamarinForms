@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using Xamarin.Forms;
 
 namespace Axai
@@ -21,7 +20,7 @@ namespace Axai
 
 				do{
 					mbmbersViewModelObject = await new MembersViewModel().StartAsync(); 
-					if (mbmbersViewModelObject ==null){
+					if (mbmbersViewModelObject == null){
 						await this.DisplayAlert ("Connection Error", "The Server could not be reached. Please check that you have an active internet connection and try again.", "Try Again");
 					}
 				}while (mbmbersViewModelObject == null);
@@ -31,7 +30,6 @@ namespace Axai
 
 				this.IsBusy = false;
 
-				//await this.DisplayAlert ("JSON", MembersList[0].SsName, "OK", null);
 			}	
 		}
 
@@ -41,10 +39,7 @@ namespace Axai
 			var member = args.Item as Member;
 			if (member == null)
 				return;
-
-
-			//this.DisplayAlert ("Item selected", member.SsFieldUserPictureFileUrl.ToString(), "OK", null);
-
+				
 			var memberDetails = new MemberDetails (member);
 
 			Navigation.PushAsync( memberDetails);
