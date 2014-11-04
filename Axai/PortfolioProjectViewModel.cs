@@ -20,7 +20,11 @@ namespace Axai
 		{
 			PortfolioProjects = new ObservableCollection<PortfolioProject>();
 
-			this.json = await GetJsonFromDrupalAsync (projectsIndexJsonURI);		
+			this.json = await GetJsonFromDrupalAsync (projectsIndexJsonURI);
+
+			if (this.json == null) {
+				return null;
+			}
 
 			JObject jObj = JObject.Parse(json);
 

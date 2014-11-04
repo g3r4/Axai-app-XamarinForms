@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Net; 
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 
 
@@ -39,7 +38,7 @@ namespace Axai
 				{
 					valueString = jObj["response"] ["docs"] [i] [indexKey].ToString() ;
 				}
-			} catch (System.NullReferenceException){
+			} catch (NullReferenceException){
 				valueString = null;
 			} 
 			return valueString;

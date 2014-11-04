@@ -19,7 +19,13 @@ namespace Axai
 
 				this.IsBusy=true;
 
-				projectsViewModelObject = await new PortfolioProjectViewModel().StartAsync(); 
+				do{
+					projectsViewModelObject = await new PortfolioProjectViewModel().StartAsync();
+					if (projectsViewModelObject ==null){
+						await this.DisplayAlert ("Connection Error", "The Server could not be reached. Please check that you have an active internet connection and try again.", "Try Again");
+					}
+				}while (projectsViewModelObject == null);
+
 
 				this.BindingContext = projectsViewModelObject; 
 
