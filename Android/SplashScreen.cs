@@ -1,5 +1,5 @@
 ﻿//
-//  MainActivity.cs
+//  SplashScreen.cs
 //
 //  Author:
 //       Gerardo M. <gerardo@axai.com.mx>
@@ -18,26 +18,32 @@
 //
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using Android.App;
-using Android.Content.PM;
+using Android.Content;
 using Android.OS;
-
-using Xamarin.Forms.Platform.Android;
-
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.Content.PM;
 
 namespace Axai.Android
 {
-	[Activity (Label = "Axai", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-	public class MainActivity : AndroidActivity
+	[Activity(Label = "Axai", MainLauncher = true, NoHistory = true, Theme = "@style/Theme.Splash", 
+		ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	public class SplashScreen : Activity
 	{
-		protected override void OnCreate (Bundle bundle)
+		protected override void OnCreate(Bundle bundle)
 		{
-			base.OnCreate (bundle);
+			base.OnCreate(bundle);
 
-			Xamarin.Forms.Forms.Init (this, bundle);
-
-			SetPage (App.GetMainPage ());
+			var intent = new Intent(this, typeof(MainActivity));
+			StartActivity(intent);
 		}
 	}
 }

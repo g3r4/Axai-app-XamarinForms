@@ -63,7 +63,13 @@ namespace Axai.Android
 			public const int icon = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int twitter_55acee = 2130837510;
+			public const int splash = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int SplashScreen = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int twitter_55acee = 2130837512;
 			
 			static Drawable()
 			{
@@ -78,8 +84,8 @@ namespace Axai.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int myButton = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int myButton = 2131099648;
 			
 			static Id()
 			{
@@ -122,6 +128,22 @@ namespace Axai.Android
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Theme_Splash = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
