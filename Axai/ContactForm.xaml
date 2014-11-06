@@ -32,12 +32,9 @@
 			</StackLayout>
 
 			<Label Text="Are you ready to get started?" XAlign="Center" TextColor="Black"/>
-			<Label Text="Give us a Call (International):" XAlign="Center" TextColor="Black"/>
+			<Label Text="Give us a Call:" XAlign="Center" TextColor="Black"/>
 			<Button Text="+52-33-1812-8001" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
 			<Button Text="+52-33-3632-6361" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
-			<Label Text="México local numbers:" XAlign="Center" TextColor="Black"/>
-			<Button Text="33-1812-8001" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
-			<Button Text="33-3632-6361" Clicked="OnCall" BackgroundColor="White" TextColor="#08C"/>
 			<Label Text="Or tell us about your project:" XAlign="Center" TextColor="Black"/>
 
 			<StackLayout Padding="10,10,10,0">
