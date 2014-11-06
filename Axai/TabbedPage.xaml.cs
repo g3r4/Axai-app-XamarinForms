@@ -31,11 +31,11 @@ namespace Axai
 
 			InitializeComponent ();
 
-			// Add Children 1 of 4: Members Page
-			this.Children.Add(new MembersPage ());
-
-			// Add Children 2 of 4: Blog Page
+			// Add Children 1 of 4: Blog Page
 			this.Children.Add(new BlogPage ()) ;
+
+			// Add Children 2 of 4: Members Page
+			this.Children.Add(new MembersPage ());
 
 			// Add Children 3 of 4: Portfolio Page
 			this.Children.Add(new PortfolioPage ());
